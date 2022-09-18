@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+}
+.grid{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    display: block;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+}
+h6{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    margin-bottom:20px;
+     font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-size: 2.5em;
+    font-family: 'Fraunces', serif;
+     margin-bottom:20px;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7em;
+    font-size: 14px;
+    margin-bottom:20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+.current-price{
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+    padding-right: 20px;
+    font-family: 'Fraunces', serif;
+}
+.old-price{
+   color:hsl(228, 12%, 48%); 
+   text-decoration: line-through;
+   font-size: .8em;
+}
+button{
+    border: none;
+    padding: 15px 0;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+   
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+     font-family: 'Montserrat', sans-serif;
+}
+.icon{
+    padding-right: 7px;
+}
+button:hover{
+    background-color: rgb(3, 37, 3);
+}
+@media(max-width:775px){
+    .container{
+       margin: 15px auto;
+       padding: 0 15px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .img img{
+       object-fit: cover;
+       max-height: 450px;
+    }
+    h6 , h2 , p , .price{
+        padding-bottom: 20px;
+    }
+    button{
+        padding: 10px 0;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 3.5em;
+    }
+    h6{
+        font-size:15px;
+    }
+    p{
+        font-size: 2em;
+    }
+}
+@media(max-width:475px){
+    h2{
+        font-size:2em;
+    }
+    p{
+        font-size:1.5em;
+    }
+    .card-content{
+        padding:25px;
+    }
+}

@@ -39,24 +39,27 @@ h6{
     letter-spacing: 4px;
     color: hsl(228, 12%, 48%);
     font-size: 12px;
-    margin-bottom:20px;
-     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom:5px;
+    font-family: 'Montserrat', sans-serif;
 }
 h2{
     font-size: 2.5em;
     font-family: 'Fraunces', serif;
-     margin-bottom:20px;
+     margin-bottom:5px;
+     line-height: 1;
 }
 p{
     color: hsl(228, 12%, 48%);
     line-height: 1.7em;
-    font-size: 14px;
-    margin-bottom:20px;
+    font-size: 16px;
+    margin-bottom:5px;
+    font-weight: 300;
 }
 .price{
     display: flex;
     align-items: center;
-    margin-bottom:20px;
+    margin-bottom:5px;
 }
 .current-price{
     font-size: 2em;
@@ -76,7 +79,7 @@ button{
     color: white;
     width: 100%;
     border-radius: 10px;
-   
+    font-weight: 700;
     transition: background-color .3s ease-out;
     cursor: pointer;
      font-family: 'Montserrat', sans-serif;
